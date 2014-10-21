@@ -1,0 +1,15 @@
+<h1>Edit Post</h1>
+<%= form_for @post do |p|%>
+	<p>
+		<%= p.label :title %><br />
+		<%= p.text_field :title %>
+	</p>
+	<p>
+		<%= p.label :content %><br />
+		<%= p.text_area :content %>
+	</p>
+	<p>
+		<%= p.submit "Edit Post" %>
+	</p>
+<% end %>
+
